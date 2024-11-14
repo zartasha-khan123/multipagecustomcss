@@ -31,7 +31,7 @@ function Navbar() {
  <ul>
        <li><Link href="/" style={{fontWeight:'bold',color:'#365567'}}>Home</Link></li>
        <li><Link href="/joinus">Shop</Link></li>
-       <li><Link href="/">Our Services</Link></li>
+       <li><Link href="/services">Our Services</Link></li>
        <li><Link href="contact">Contact </Link></li>
     </ul>
 
