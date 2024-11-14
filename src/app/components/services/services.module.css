@@ -1,0 +1,183 @@
+/* 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #5decff;
+  background-color: #160f0f;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #5decff;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #252f88;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #160f0f;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(126, 194, 173);
+} */
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #5decff;
+  background-color: #160f0f;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px; 
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px;
+}
+
+.card {
+  background-color: #5decff;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.2rem; 
+  color: #252f88;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #160f0f;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgb(126, 194, 173);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* Smaller font for medium screens */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Smaller font for medium screens */
+  }
+
+  .services {
+    gap: 15px; /* Adjust spacing between cards */
+  }
+
+  .card {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .card h2 {
+    font-size: 1rem; /* Smaller headings for medium screens */
+  }
+
+  .card p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem; /* Even smaller font for mobile */
+    padding: 8px;
+  }
+
+  .description {
+    font-size: 0.85rem; /* Smaller description for mobile */
+  }
+
+  .card {
+    padding: 10px; /* Compact padding for small screens */
+  }
+
+  .card h2 {
+    font-size: 0.9rem; /* Smaller headings for mobile */
+  }
+
+  .card p {
+    font-size: 0.8rem; /* Adjust text size for mobile */
+  }
+}
