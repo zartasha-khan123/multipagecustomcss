@@ -14,7 +14,7 @@ function ProductSection() {
   {CardData.map((item,index)=>{
     return (
 
-        <Link href={`/joinus/ ${item.id}`} key={index}>
+        <Link href={`/joinus/${item.id}`} key={index}>
  <div className={styles.card} key={index}>
     <div className={styles.topimgdiv} style={{backgroundColor:item.backgroundColor}}>
       <Image src={item.src} width={300} height={600} alt={'product'} className={styles.cardimg}></Image>

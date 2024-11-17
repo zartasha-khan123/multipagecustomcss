@@ -11,4 +11,22 @@ body{
   border:.1875rem solid transparent;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
+  overflow: auto;
+}
+
+
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1; 
+}
+
+.videoElement {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
