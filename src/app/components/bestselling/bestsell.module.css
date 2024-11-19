@@ -1,4 +1,4 @@
-.bestselling{
+/* .bestselling{
     width:100%;
    padding-top: 5.4375rem;
    text-align: center;
@@ -166,7 +166,7 @@
     font-size: 2.5rem;
     color: #000;
     font-family: 'Irish Grover';
-    margin-bottom: 2rem; /* Space between heading and images */
+    margin-bottom: 2rem; 
     text-align: center;
 }
 
@@ -203,4 +203,238 @@
     font-size: 1.875rem;
     color:black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+
+.bestselling {
+  width: 100%;
+  padding-top: 5.4375rem;
+  text-align: center;
+}
+
+.whatsnew {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5.625rem 0 3.125rem 0;
+  flex-wrap: wrap;
+}
+
+.whatsnew img {
+  width: 100%;
+  max-width: 500px; /* Limit size for responsiveness */
+  height: auto;
+  border-radius: 0.625rem;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.whatsnew img:hover {
+  transform: scale(1.1);
+}
+
+.bestselling h1 {
+  font-size: 4rem;
+  color: #3ECFDA;
+  margin-bottom: 2.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.centerul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerul ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-family: inknutAntiqua;
+}
+
+.bestselling button {
+  width: 14rem;
+  height: 3.5rem;
+  background-color: #3ECFDA;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: inknutAntiqua;
+  margin: 2.5rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.bestselling button:hover {
+  background-color: #7c9da5;
+  cursor: pointer;
+}
+
+.embla {
+  overflow: hidden;
+  margin-top: 3.3125rem;
+}
+
+.embla_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.embla_slide {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  flex: 1 1 auto; /* Allow resizing */
+}
+
+.imgdiv {
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cardimgs {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.cardimgs:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.textdiv {
+  width: 100%;
+  max-width: 340px;
+}
+
+.textdiv h1 {
+  font-size: 1.875rem;
+  color: black;
+}
+
+.textdiv p {
+  white-space: pre-wrap; /* Better text wrapping */
+  font-size: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  display: inline-block;
+  margin-top: -0.1875rem;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.625rem 0 3.125rem;
+}
+
+.category h1 {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: 'Irish Grover';
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.categoryP {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: 'Irish Grover', cursive;
+  max-width: 340px;
+  text-align: center;
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+.image-text {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .bestselling h1 {
+      font-size: 2.5rem;
+  }
+
+  .centerul ul {
+      font-size: 1.25rem;
+      gap: 1rem;
+  }
+
+  .bestselling button {
+      width: 12rem;
+      height: 3rem;
+      font-size: 1rem;
+  }
+
+  .textdiv h1, .textdiv p {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bestselling h1 {
+      font-size: 2rem;
+  }
+
+  .bestselling button {
+      width: 10rem;
+      height: 2.5rem;
+  }
+
+  .textdiv h1, .textdiv p {
+      font-size: 1rem;
+  }
+
+  .category h1 {
+      font-size: 1.5rem;
+  }
+
+  .image-text {
+      font-size: 1rem;
+  }
 }
