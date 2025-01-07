@@ -1,62 +1,20 @@
-/* 
-.heading{
+
+   /* .heading {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 800;
     font-size: 2.5rem;
     padding-top: 1.25rem;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: aqua;
-    padding: 20px; 
-    margin-bottom: 20px; 
-    gap: 20px;
-  }
-  
-  .iconLeft,
-  .iconRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .responsiveImage {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-   */
-
-
-   .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    font-size: 2.5rem; /* Base size */
-    padding-top: 1.25rem;
-    text-align: center; /* Center-align text for smaller screens */
-    margin: 0 10px; /* Add margin for spacing on smaller screens */
+    text-align: center; 
+    margin: 0 10px; 
   }
   
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: wrap; 
     position: relative;
     background-color: aqua;
     padding: 20px;
@@ -78,58 +36,165 @@
   }
   
   .responsiveImage {
-    max-width: 600px; /* Maximum image width for large screens */
-    width: 100%; /* Scale image width to container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits well inside the container */
+    max-width: 600px; 
+    width: 100%; 
+    height: auto;
+    object-fit: contain; 
   }
   
-  /* Media Queries for Responsiveness */
   @media (max-width: 1024px) {
     .heading {
-      font-size: 2rem; /* Adjust font size for tablets */
+      font-size: 2rem; 
       padding-top: 1rem;
     }
   
     .responsiveImage {
-      max-width: 500px; /* Reduce max width for tablets */
+      max-width: 500px; /
     }
   
     .container {
-      padding: 15px; /* Reduce padding for smaller screens */
-      gap: 15px; /* Adjust gap for better spacing */
+      padding: 15px;
+      gap: 15px; 
     }
   }
   
   @media (max-width: 768px) {
     .heading {
-      font-size: 1.8rem; /* Smaller font for tablets */
+      font-size: 1.8rem; 
       padding-top: 0.75rem;
     }
   
     .responsiveImage {
-      max-width: 400px; /* Further reduce image size for tablets */
+      max-width: 400px; 
     }
   
     .container {
-      padding: 10px; /* Compact padding for smaller devices */
-      gap: 10px; /* Adjust spacing for smaller screens */
+      padding: 10px; 
+      gap: 10px; 
     }
   }
   
   @media (max-width: 480px) {
     .heading {
-      font-size: 1.5rem; /* Even smaller font for mobile */
-      padding-top: 0.5rem;
+      font-size: 1.5rem; 
     }
   
     .responsiveImage {
-      max-width: 300px; /* Smaller image size for mobile */
+      max-width: 300px; 
     }
   
     .container {
-      padding: 5px; /* Reduce padding for very small screens */
-      gap: 5px; /* Minimize spacing for tight layouts */
+      padding: 5px;
+      gap: 5px; 
     }
   }
-  
+   */
+
+
+   .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.5rem; /* Base size */
+    padding-top: 1.25rem;
+    text-align: center; /* Center-align text for smaller screens */
+    margin: 0 10px; /* Add margin for spacing on smaller screens */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    position: relative;
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.iconLeft,
+.iconRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsiveImage {
+    max-width: 600px; /* Maximum image width for large screens */
+    width: 100%; /* Scale image width to container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits well inside the container */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 2rem; /* Adjust font size for tablets */
+        padding-top: 1rem;
+    }
+
+    .responsiveImage {
+        max-width: 500px; /* Reduce max width for tablets */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding for smaller screens */
+        gap: 15px; /* Adjust gap for better spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8rem; /* Smaller font for tablets */
+        padding-top: 0.75rem;
+    }
+
+    .responsiveImage {
+        max-width: 400px; /* Further reduce image size for tablets */
+    }
+
+    .container {
+        padding: 10px; /* Compact padding for smaller devices */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5rem; /* Even smaller font for mobile */
+        padding-top: 0.5rem;
+    }
+
+    .responsiveImage {
+        max-width: 300px; /* Smaller image size for mobile */
+    }
+
+    .container {
+        padding: 5px; /* Reduce padding for very small screens */
+        gap: 5px; /* Minimize spacing for tight layouts */
+    }
+}
+
+@media (max-width: 390px) {
+    .heading {
+        font-size: 1.2rem; /* Adjust font size for very small screens */
+        padding-top: 0.5rem; /* Minimal padding */
+    }
+
+    .responsiveImage {
+        max-width: 250px; /* Smaller max width for 390px screens */
+    }
+
+    .container {
+        padding: 3px; /* Minimal padding for very small devices */
+        gap: 3px; /* Tighten spacing further */
+    }
+}

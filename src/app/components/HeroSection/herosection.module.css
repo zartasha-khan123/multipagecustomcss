@@ -1,4 +1,4 @@
-
+/* 
 .herosection{
     width: 100%;
     display: flex;
@@ -111,4 +111,235 @@ padding-top: 4.375rem;
 
 } 
 
+ */
 
+ .herosection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.heroLeft {
+    width: 50%;
+    height: 100%;
+    padding-top: 6.8125rem;
+    border: transparent 0.1875rem solid;
+}
+
+.heroLeft h1 {
+    font-size: 4.0113rem;
+    color: #3ECFDA;
+    margin-bottom: 2.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.heroLeft button {
+    width: 14.4375rem;
+    height: 3.5625rem;
+    background-color: #3ECFDA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.heroLeft button:hover {
+    cursor: pointer;
+    background-color: #71718d;
+}
+
+.heroLeft p {
+    font-size: 1.5rem;
+    color: #71718d;
+    margin-bottom: 2.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.heroRight {
+    width: 50%;
+    height: 100%;
+    padding-top: 6.8125rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroRightImg {
+    width: 38.875rem;
+    height: 35.3125rem;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 120px;
+    background-color: #3ECFDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .herosection {
+        flex-direction: column;
+        gap: 30px; /* Add vertical spacing for smaller screens */
+    }
+
+    .heroLeft, .heroRight {
+        width: 80%; /* Ensure both sections take 80% width on medium screens */
+        text-align: center;
+    }
+
+    .heroLeft h1 {
+        font-size: 3rem; /* Adjust font size */
+        padding-top: 15px; /* Adjust top padding */
+    }
+
+    .heroLeft p {
+        font-size: 1.25rem; /* Adjust paragraph size */
+        padding-top: 20px;
+    }
+
+    .heroLeft button {
+        width: 12rem; /* Adjust button width */
+        height: 3rem;
+        font-size: 1.2rem; /* Slightly smaller text */
+    }
+
+    .heroRight {
+        padding-top: 4.375rem;
+        justify-content: center;
+    }
+
+    .heroRightImg {
+        width: 100%;
+        height: auto;
+        border-radius: 80px; /* Adjust image corner radius */
+    }
+}
+
+@media (max-width: 768px) {
+    .herosection {
+        flex-direction: column;
+        gap: 3rem; /* More gap for very small screens */
+        padding: 20px;
+    }
+
+    .heroLeft, .heroRight {
+        width: 100%; /* Full width on smaller screens */
+        padding-top: 4.375rem;
+        text-align: center;
+    }
+
+    .heroLeft h1 {
+        font-size: 2.5rem; /* Smaller font size */
+        padding-top: 10px;
+    }
+
+    .heroLeft p {
+        font-size: 1.125rem; /* Smaller paragraph font */
+    }
+
+    .heroLeft button {
+        width: 10rem; /* Smaller button width */
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .heroRight {
+        padding-top: 4rem;
+        justify-content: center;
+    }
+
+    .heroRightImg {
+        width: 90%;
+        height: auto;
+        border-radius: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .herosection {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 10px;
+    }
+
+    .heroLeft, .heroRight {
+        width: 100%; /* Full width for mobile devices */
+        text-align: center;
+        padding-top: 3.25rem;
+    }
+
+    .heroLeft h1 {
+        font-size: 2rem; /* Even smaller font size */
+        margin-bottom: 1.5rem;
+    }
+
+    .heroLeft p {
+        font-size: 1rem; /* Adjust to a smaller size */
+        margin-bottom: 1rem;
+    }
+
+    .heroLeft button {
+        width: 9rem; /* Smaller button size for mobile */
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .heroRight {
+        padding-top: 3.25rem;
+        justify-content: center;
+    }
+
+    .heroRightImg {
+        width: 80%;
+        height: auto;
+        border-radius: 120px;
+    }
+}
+
+@media (max-width: 390px) {
+    .herosection {
+        padding: 5px;
+        gap: 1.5rem;
+    }
+
+    .heroLeft, .heroRight {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heroLeft h1 {
+        font-size: 1.5rem; /* Smallest font size */
+        margin-bottom: 1rem;
+    }
+
+    .heroLeft p {
+        font-size: 0.9rem; /* Smallest text for better readability */
+        margin-bottom: 0.75rem;
+    }
+
+    .heroLeft button {
+        width: 8rem; /* Compact button */
+        height: 2.3rem;
+        font-size: 0.85rem;
+    }
+
+    .heroRight {
+        padding-top: 3rem;
+        justify-content: center;
+    }
+
+    .heroRightImg {
+        width: 70%;
+        height: auto;
+        border-radius: 130px;
+    }
+}
